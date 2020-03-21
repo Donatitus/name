@@ -1,0 +1,25 @@
+
+
+<div  style="background-color:pink;
+width:60%;
+height:30%;
+top:50%;
+left:20%;
+right:20%;
+position:absolute;">
+
+<div class="row">
+    <div id="demo" class="col-sm-6">
+        
+        <input type="text" (input)="todo=$event.target.value" >
+        <button (click)="add()">add</button>
+        <ul *ngFor="let item of list">
+            
+            <li>{{item}} <button (click)="edit()">edit</button> <button (click)="delete()">delete</button>
+            </li>
+        </ul>
+    </div>
+</div>
+     
+    
+</div>
